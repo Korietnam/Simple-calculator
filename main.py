@@ -1,4 +1,5 @@
 from art import logo
+
 def add(n1, n2):
     return n1 + n2
 
@@ -11,11 +12,15 @@ def mul(n1, n2):
 def div(n1, n2):
     return n1 / n2
 
+def exp(n1, n2):
+    return n1 ** n2
+
 operations = {
     "+": add,
     "-": sub,
     "*": mul,
     "/": div,
+    "^": exp,
 }
 
 def calculator():
